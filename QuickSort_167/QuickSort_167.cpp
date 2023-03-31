@@ -49,4 +49,10 @@ void q_short(int low, int high)
 	//partition the list into two parts
 	//on econtaining element less that or equal to pivot
 	// other containing element
+
+	pivot = arr[low];			// langkah 2
+
+	i = low + 1;				// langkah 3
+
 }
+
