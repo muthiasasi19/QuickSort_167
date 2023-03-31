@@ -65,7 +65,7 @@ void q_short(int low, int high)
 			cmp_count++;
 		}
 		cmp_count++;
-	}
+	
 	// search for an element less than or equal to pivot
 	while ((arr[j] > pivot) && (j >= low))			// langkah 7
 	{
@@ -82,3 +82,19 @@ void q_short(int low, int high)
 	}
 }
 
+// j now containt the index of the last element in the sorted list
+if (low < j)										// langkah 11
+{
+	// move the pivot to its correct position in the list
+	swap(low, j);
+	mov_count++;
+} 
+// sort the list ojn the right of pivot using quick sort
+q_short(low, j - 1);								// langkah 12
+
+//	sort the list on the right of pivot uding the quick sort 
+q_short(j + 1, high);								// langkah 13
+
+} 
+
+	
