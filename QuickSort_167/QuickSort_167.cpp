@@ -43,16 +43,24 @@ void swap(int x, int y)
 void q_short(int low, int high)
 {
 	int pivot, i, j;
-	if (low > high)			// langkah 1
+	if (low > high)									// langkah 1
 		return;
 
 	//partition the list into two parts
 	//on econtaining element less that or equal to pivot
 	// other containing element
 
-	pivot = arr[low];			// langkah 2
+	pivot = arr[low];								// langkah 2
 
-	i = low + 1;				// langkah 3
+	i = low + 1;									// langkah 3
+	j = high;										// langkah 4
 
+
+	while (i <= j)
+	{												// langkah 10
+		// search for an element greather than pivot
+		while ((arr[i] <= pivot) && (i <= high))	// langkah 5
+		{
+		}
 }
 
