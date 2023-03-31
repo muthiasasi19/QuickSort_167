@@ -69,4 +69,16 @@ void q_short(int low, int high)
 	// search for an element less than or equal to pivot
 	while ((arr[j] > pivot) && (j >= low))			// langkah 7
 	{
+		j--;										// langkah 8
+		cmp_count++;
 	}
+	cmp_count++;
+	// if the greater element is on the left of the element
+	if (i < j)										// langkah 9
+	{
+		// swap the element at index i with the element at index j
+		swap(i, j);
+		mov_count++;
+	}
+}
+
